@@ -123,6 +123,20 @@ input[type="file"]::file-selector-button {
   cursor: pointer;
 }
 
+.account-panel {
+  border: 1px solid var(--ink-border);
+  border-radius: 4px;
+  background-color: color-mix(in oklch, var(--ink-soft) 48%, var(--ink));
+}
+
+.account-row {
+  transition: background-color 160ms ease, color 160ms ease;
+}
+
+.account-row:hover {
+  background-color: color-mix(in oklch, var(--primary) 8%, transparent);
+}
+
 @utility font-display {
   font-family: var(--font-display);
   letter-spacing: -0.005em;
