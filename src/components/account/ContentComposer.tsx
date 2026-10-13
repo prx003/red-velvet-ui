@@ -98,7 +98,7 @@ export function Composer({ kind, onClose }: { kind: CreateKind; onClose: () => v
   const captionLabel = { Post: 'Caption', Reel: 'Caption', Story: 'Text on story', Tweet: "What's happening?", News: 'Full story', Event: 'Description', Ticket: 'Ticket description' }[kind];
   const textRequired = kind === 'Tweet' || kind === 'News' || kind === 'Event';
 
-  return <form onSubmit={submit} className="space-y-4">
+  return <form onSubmit={submit} className={`space-y-4 ${kind === 'Post' ? 'post-composer' : ''}`}>
     {rule && <Section title="Media">
       <Field label={rule.label} hint={`Max ${MAX_MB} MB per file`} wide>
         <Input type="file" aria-label={rule.label} accept={rule.accept} multiple={rule.multiple} className="mt-1" onChange={e => { pickFiles(Array.from(e.target.files ?? [])); e.target.value = ''; }} />
