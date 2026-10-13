@@ -10,3 +10,5 @@
 <!-- LOVABLE:END -->
 
 Keep the imported SAC Community route and component layout intact, and centralize its red-and-black palette and shared form styling in `src/styles.css` so screen refinements stay cosmetic and consistent.
+
+Apply app database schema changes through Lovable Cloud custom migrations; the imported Drizzle SQL is reference history, so live schema and generated client types stay aligned through the managed migration workflow.
