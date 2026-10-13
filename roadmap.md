@@ -1,3 +1,4 @@
 - [x] Restore the uploaded SAC Community app source without its private environment file or generated route tree.
 - [ ] Apply a consistent red-and-black theme and polish the requested forms, login, profile, and settings screens without changing their layout or behavior.
-- [ ] Verify the updated preview and project checks.
+- [ ] Restore the imported app's account/content schema in Lovable Cloud so generated types match the app's existing queries.
+- [ ] Verify the preview and project checks, including the reported type errors.
